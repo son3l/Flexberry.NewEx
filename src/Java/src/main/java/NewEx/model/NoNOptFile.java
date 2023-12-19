@@ -39,14 +39,14 @@ public class NoNOptFile {
     private String exe;
 
     @EdmIgnore
-    @Converter(converterClass = UUIDConverter.class, name = "NoNOptFile")
-    @Convert("NoNOptFile")
-    @Column(name = "NoNOptFile", length = 16, unique = true, nullable = false)
-    private UUID _nonoptfileid;
+    @Converter(converterClass = UUIDConverter.class, name = "UploadFile")
+    @Convert("UploadFile")
+    @Column(name = "UploadFile", length = 16, unique = true, nullable = false)
+    private UUID _uploadfileid;
 
     @ManyToOne(optional = false, fetch = FetchType.LAZY)
-    @JoinColumn(name = "NoNOptFile", insertable = false, updatable = false)
-    private UploadFile nonoptfile;
+    @JoinColumn(name = "UploadFile", insertable = false, updatable = false)
+    private UploadFile uploadfile;
 
 
     public NoNOptFile() {

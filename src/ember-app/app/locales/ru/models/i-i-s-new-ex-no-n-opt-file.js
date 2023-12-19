@@ -51,6 +51,9 @@ export default {
     size: {
       __caption__: 'Size'
     },
+    uploadFile: {
+      __caption__: 'uploadFile'
+    },
     noNOptFile: {
       __caption__: 'noNOptFile'
     }

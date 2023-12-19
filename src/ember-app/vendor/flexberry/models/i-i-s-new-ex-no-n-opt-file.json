@@ -56,7 +56,7 @@
     {
       "polymorphic": false,
       "presence": true,
-      "name": "noNOptFile",
+      "name": "uploadFile",
       "relatedTo": "i-i-s-new-ex-upload-file",
       "inverse": null
     }

@@ -10,7 +10,7 @@ export let Model = Mixin.create({
   name: DS.attr('string'),
   repository: DS.attr('string'),
   size: DS.attr('number'),
-  noNOptFile: DS.belongsTo('i-i-s-new-ex-upload-file', { inverse: null, async: false })
+  uploadFile: DS.belongsTo('i-i-s-new-ex-upload-file', { inverse: null, async: false })
 });
 
 export let ValidationRules = {
@@ -46,8 +46,8 @@ export let ValidationRules = {
       validator('number', { allowString: true, allowBlank: true, integer: true }),
     ],
   },
-  noNOptFile: {
-    descriptionKey: 'models.i-i-s-new-ex-no-n-opt-file.validations.noNOptFile.__caption__',
+  uploadFile: {
+    descriptionKey: 'models.i-i-s-new-ex-no-n-opt-file.validations.uploadFile.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),
