@@ -25,6 +25,12 @@ export let ValidationRules = {
   },
 };
 
+export let defineBaseModel = function (modelClass) {
+  modelClass.reopenClass({
+    _parentModelName: 'i-i-s-new-ex-download-file'
+  });
+};
+
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('OptimizeE', 'i-i-s-new-ex-optimize', {
     lvlCompress: attr('Lvl compress', { index: 0 }),

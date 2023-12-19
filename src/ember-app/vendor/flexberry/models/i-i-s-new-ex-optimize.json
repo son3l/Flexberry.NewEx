@@ -3,8 +3,8 @@
   "modelName": "i-i-s-new-ex-optimize",
   "className": "Optimize",
   "nameSpace": "IIS.NewEx",
-  "parentModelName": null,
-  "parentClassName": null,
+  "parentModelName": "i-i-s-new-ex-download-file",
+  "parentClassName": "DownloadFile",
   "attrs": [
     {
       "name": "lvlCompress",

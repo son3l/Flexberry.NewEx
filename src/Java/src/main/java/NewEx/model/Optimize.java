@@ -27,6 +27,12 @@ public class Optimize {
     @Column(name = "method")
     private String method;
 
+    @Column(name = "PathToLoad")
+    private String pathtoload;
+
+    @Column(name = "Repository")
+    private String repository;
+
 
     public Optimize() {
         super();
@@ -54,6 +60,22 @@ public class Optimize {
 
     public void setmethod(String method) {
       this.method = method;
+    }
+
+    public String getPathToLoad() {
+      return pathtoload;
+    }
+
+    public void setPathToLoad(String pathtoload) {
+      this.pathtoload = pathtoload;
+    }
+
+    public String getRepository() {
+      return repository;
+    }
+
+    public void setRepository(String repository) {
+      this.repository = repository;
     }
 
 

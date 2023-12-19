@@ -24,6 +24,9 @@ public class DownloadFile {
     @Column(name = "PathToLoad")
     private String pathtoload;
 
+    @Column(name = "Repository")
+    private String repository;
+
 
     public DownloadFile() {
         super();
@@ -43,6 +46,14 @@ public class DownloadFile {
 
     public void setPathToLoad(String pathtoload) {
       this.pathtoload = pathtoload;
+    }
+
+    public String getRepository() {
+      return repository;
+    }
+
+    public void setRepository(String repository) {
+      this.repository = repository;
     }
 
 

@@ -28,31 +28,31 @@ export default Controller.extend({
             link: 'i-i-s-new-ex-no-n-opt-file-l',
             caption: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-no-n-opt-file-l.caption'),
             title: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-no-n-opt-file-l.title'),
-            icon: 'archive',
+            icon: 'suitcase',
             children: null
           }, {
             link: 'i-i-s-new-ex-download-file-l',
             caption: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-download-file-l.caption'),
             title: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-download-file-l.title'),
-            icon: 'file',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-new-ex-optimize-l',
             caption: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-optimize-l.caption'),
             title: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-optimize-l.title'),
-            icon: 'archive',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-new-ex-upload-file-l',
             caption: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-upload-file-l.caption'),
             title: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-upload-file-l.title'),
-            icon: 'address card',
+            icon: 'chart bar',
             children: null
           }, {
             link: 'i-i-s-new-ex-opt-files-l',
             caption: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-opt-files-l.caption'),
             title: i18n.t('forms.application.sitemap.new-ex.i-i-s-new-ex-opt-files-l.title'),
-            icon: 'table',
+            icon: 'tasks',
             children: null
           }]
         }

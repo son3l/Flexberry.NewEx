@@ -3,8 +3,8 @@
   "modelName": "i-i-s-new-ex-download-file",
   "className": "DownloadFile",
   "nameSpace": "IIS.NewEx",
-  "parentModelName": null,
-  "parentClassName": null,
+  "parentModelName": "i-i-s-new-ex-opt-files",
+  "parentClassName": "OptFiles",
   "attrs": [
     {
       "name": "pathToLoad",

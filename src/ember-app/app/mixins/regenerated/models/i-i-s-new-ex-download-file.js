@@ -17,6 +17,12 @@ export let ValidationRules = {
   },
 };
 
+export let defineBaseModel = function (modelClass) {
+  modelClass.reopenClass({
+    _parentModelName: 'i-i-s-new-ex-opt-files'
+  });
+};
+
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('DownloadFileE', 'i-i-s-new-ex-download-file', {
     pathToLoad: attr('Path to load', { index: 0 })

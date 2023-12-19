@@ -17,6 +17,12 @@ export let ValidationRules = {
   },
 };
 
+export let defineBaseModel = function (modelClass) {
+  modelClass.reopenClass({
+    _parentModelName: 'i-i-s-new-ex-optimize'
+  });
+};
+
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('UploadFileE', 'i-i-s-new-ex-upload-file', {
     pathToFile: attr('Path to file', { index: 0 })

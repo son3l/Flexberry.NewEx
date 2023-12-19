@@ -10,12 +10,17 @@ CREATE TABLE NoNOptFile (
  Name VARCHAR(255) NULL,
  Repository VARCHAR(255) NULL,
  Size INT NULL,
+ PathToFile VARCHAR(255) NULL,
+ lvlCompress INT NULL,
+ method VARCHAR(8) NULL,
+ PathToLoad VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE DownloadFile (
  primaryKey UUID NOT NULL,
  PathToLoad VARCHAR(255) NULL,
+ Repository VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -23,12 +28,18 @@ CREATE TABLE Optimize (
  primaryKey UUID NOT NULL,
  lvlCompress INT NULL,
  method VARCHAR(8) NULL,
+ PathToLoad VARCHAR(255) NULL,
+ Repository VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE UploadFile (
  primaryKey UUID NOT NULL,
  PathToFile VARCHAR(255) NULL,
+ lvlCompress INT NULL,
+ method VARCHAR(8) NULL,
+ PathToLoad VARCHAR(255) NULL,
+ Repository VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 

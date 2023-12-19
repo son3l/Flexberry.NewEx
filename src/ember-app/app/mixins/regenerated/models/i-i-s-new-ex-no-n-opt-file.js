@@ -47,6 +47,12 @@ export let ValidationRules = {
   },
 };
 
+export let defineBaseModel = function (modelClass) {
+  modelClass.reopenClass({
+    _parentModelName: 'i-i-s-new-ex-upload-file'
+  });
+};
+
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('NoNOptFileE', 'i-i-s-new-ex-no-n-opt-file', {
     date: attr('Date', { index: 0 }),

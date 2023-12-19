@@ -3,8 +3,8 @@
   "modelName": "i-i-s-new-ex-upload-file",
   "className": "UploadFile",
   "nameSpace": "IIS.NewEx",
-  "parentModelName": null,
-  "parentClassName": null,
+  "parentModelName": "i-i-s-new-ex-optimize",
+  "parentClassName": "Optimize",
   "attrs": [
     {
       "name": "pathToFile",

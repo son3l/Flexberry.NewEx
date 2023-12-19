@@ -37,6 +37,18 @@ public class NoNOptFile {
     @Column(name = "Exe")
     private String exe;
 
+    @Column(name = "PathToFile")
+    private String pathtofile;
+
+    @Column(name = "lvlCompress")
+    private Integer lvlcompress;
+
+    @Column(name = "method")
+    private String method;
+
+    @Column(name = "PathToLoad")
+    private String pathtoload;
+
 
     public NoNOptFile() {
         super();
@@ -88,6 +100,38 @@ public class NoNOptFile {
 
     public void setExe(String exe) {
       this.exe = exe;
+    }
+
+    public String getPathToFile() {
+      return pathtofile;
+    }
+
+    public void setPathToFile(String pathtofile) {
+      this.pathtofile = pathtofile;
+    }
+
+    public Integer getlvlCompress() {
+      return lvlcompress;
+    }
+
+    public void setlvlCompress(Integer lvlcompress) {
+      this.lvlcompress = lvlcompress;
+    }
+
+    public String getmethod() {
+      return method;
+    }
+
+    public void setmethod(String method) {
+      this.method = method;
+    }
+
+    public String getPathToLoad() {
+      return pathtoload;
+    }
+
+    public void setPathToLoad(String pathtoload) {
+      this.pathtoload = pathtoload;
     }
 
 
