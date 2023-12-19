@@ -6,7 +6,8 @@ import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes'
 
 export let Model = Mixin.create({
   lvlCompress: DS.attr('number'),
-  method: DS.attr('i-i-s-new-ex-method')
+  method: DS.attr('i-i-s-new-ex-method'),
+  uploadFile: DS.belongsTo('i-i-s-new-ex-upload-file', { inverse: null, async: false })
 });
 
 export let ValidationRules = {
@@ -23,12 +24,13 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
-};
-
-export let defineBaseModel = function (modelClass) {
-  modelClass.reopenClass({
-    _parentModelName: 'i-i-s-new-ex-download-file'
-  });
+  uploadFile: {
+    descriptionKey: 'models.i-i-s-new-ex-optimize.validations.uploadFile.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {

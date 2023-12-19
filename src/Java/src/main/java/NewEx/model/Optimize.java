@@ -7,6 +7,7 @@ import NewEx.utils.UUIDConverter;
 import javax.persistence.*;
 import java.util.UUID;
 
+import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 
 /**
  * Entity implementation class for Entity: Optimize
@@ -27,11 +28,15 @@ public class Optimize {
     @Column(name = "method")
     private String method;
 
-    @Column(name = "PathToLoad")
-    private String pathtoload;
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "UploadFile")
+    @Convert("UploadFile")
+    @Column(name = "UploadFile", length = 16, unique = true, nullable = false)
+    private UUID _uploadfileid;
 
-    @Column(name = "Repository")
-    private String repository;
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "UploadFile", insertable = false, updatable = false)
+    private UploadFile uploadfile;
 
 
     public Optimize() {
@@ -60,22 +65,6 @@ public class Optimize {
 
     public void setmethod(String method) {
       this.method = method;
-    }
-
-    public String getPathToLoad() {
-      return pathtoload;
-    }
-
-    public void setPathToLoad(String pathtoload) {
-      this.pathtoload = pathtoload;
-    }
-
-    public String getRepository() {
-      return repository;
-    }
-
-    public void setRepository(String repository) {
-      this.repository = repository;
     }
 
 

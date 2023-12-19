@@ -3,8 +3,8 @@
   "modelName": "i-i-s-new-ex-no-n-opt-file",
   "className": "NoNOptFile",
   "nameSpace": "IIS.NewEx",
-  "parentModelName": "i-i-s-new-ex-upload-file",
-  "parentClassName": "UploadFile",
+  "parentModelName": null,
+  "parentClassName": null,
   "attrs": [
     {
       "name": "date",
@@ -52,7 +52,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "noNOptFile",
+      "relatedTo": "i-i-s-new-ex-upload-file",
+      "inverse": null
+    }
+  ],
   "hasMany": [],
   "projections": [
     {

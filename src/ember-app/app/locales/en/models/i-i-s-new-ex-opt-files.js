@@ -14,6 +14,9 @@ export default {
   validations: {
     repository: {
       __caption__: 'Repository'
+    },
+    downloadFile: {
+      __caption__: 'downloadFile'
     }
   }
 };

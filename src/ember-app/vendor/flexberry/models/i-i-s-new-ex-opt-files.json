@@ -16,7 +16,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "downloadFile",
+      "relatedTo": "i-i-s-new-ex-download-file",
+      "inverse": null
+    }
+  ],
   "hasMany": [],
   "projections": [
     {

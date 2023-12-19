@@ -7,6 +7,7 @@ import NewEx.utils.UUIDConverter;
 import javax.persistence.*;
 import java.util.UUID;
 
+import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 
 /**
  * Entity implementation class for Entity: OptFiles
@@ -23,6 +24,16 @@ public class OptFiles {
 
     @Column(name = "Repository")
     private String repository;
+
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "DownloadFile")
+    @Convert("DownloadFile")
+    @Column(name = "DownloadFile", length = 16, unique = true, nullable = false)
+    private UUID _downloadfileid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "DownloadFile", insertable = false, updatable = false)
+    private DownloadFile downloadfile;
 
 
     public OptFiles() {

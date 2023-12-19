@@ -10,17 +10,14 @@ CREATE TABLE NoNOptFile (
  Name VARCHAR(255) NULL,
  Repository VARCHAR(255) NULL,
  Size INT NULL,
- PathToFile VARCHAR(255) NULL,
- lvlCompress INT NULL,
- method VARCHAR(8) NULL,
- PathToLoad VARCHAR(255) NULL,
+ NoNOptFile UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE DownloadFile (
  primaryKey UUID NOT NULL,
  PathToLoad VARCHAR(255) NULL,
- Repository VARCHAR(255) NULL,
+ Optimize UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -28,24 +25,20 @@ CREATE TABLE Optimize (
  primaryKey UUID NOT NULL,
  lvlCompress INT NULL,
  method VARCHAR(8) NULL,
- PathToLoad VARCHAR(255) NULL,
- Repository VARCHAR(255) NULL,
+ UploadFile UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE UploadFile (
  primaryKey UUID NOT NULL,
  PathToFile VARCHAR(255) NULL,
- lvlCompress INT NULL,
- method VARCHAR(8) NULL,
- PathToLoad VARCHAR(255) NULL,
- Repository VARCHAR(255) NULL,
  PRIMARY KEY (primaryKey));
 
 
 CREATE TABLE OptFiles (
  primaryKey UUID NOT NULL,
  Repository VARCHAR(255) NULL,
+ DownloadFile UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -152,6 +145,18 @@ CREATE TABLE ApplicationLog (
  PRIMARY KEY (primaryKey));
 
 
+
+ ALTER TABLE NoNOptFile ADD CONSTRAINT FK2797bd65efc4c0e4dd53dd022e3a4bafaf174cbe FOREIGN KEY (NoNOptFile) REFERENCES UploadFile; 
+CREATE INDEX Index2797bd65efc4c0e4dd53dd022e3a4bafaf174cbe on NoNOptFile (NoNOptFile); 
+
+ ALTER TABLE DownloadFile ADD CONSTRAINT FKd13fb27d5b647f6b5f2424c2d9100e9f7b008231 FOREIGN KEY (Optimize) REFERENCES Optimize; 
+CREATE INDEX Indexd13fb27d5b647f6b5f2424c2d9100e9f7b008231 on DownloadFile (Optimize); 
+
+ ALTER TABLE Optimize ADD CONSTRAINT FK13f87a899cb008a953d5297831a959ddbab653a5 FOREIGN KEY (UploadFile) REFERENCES UploadFile; 
+CREATE INDEX Index13f87a899cb008a953d5297831a959ddbab653a5 on Optimize (UploadFile); 
+
+ ALTER TABLE OptFiles ADD CONSTRAINT FK5c4365def301dd38419904fdbc3874c152c7bfd7 FOREIGN KEY (DownloadFile) REFERENCES DownloadFile; 
+CREATE INDEX Index5c4365def301dd38419904fdbc3874c152c7bfd7 on OptFiles (DownloadFile); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

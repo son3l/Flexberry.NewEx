@@ -5,7 +5,8 @@ import { validator } from 'ember-cp-validations';
 import { attr, belongsTo, hasMany } from 'ember-flexberry-data/utils/attributes';
 
 export let Model = Mixin.create({
-  pathToLoad: DS.attr('string')
+  pathToLoad: DS.attr('string'),
+  optimize: DS.belongsTo('i-i-s-new-ex-optimize', { inverse: null, async: false })
 });
 
 export let ValidationRules = {
@@ -15,12 +16,13 @@ export let ValidationRules = {
       validator('ds-error'),
     ],
   },
-};
-
-export let defineBaseModel = function (modelClass) {
-  modelClass.reopenClass({
-    _parentModelName: 'i-i-s-new-ex-opt-files'
-  });
+  optimize: {
+    descriptionKey: 'models.i-i-s-new-ex-download-file.validations.optimize.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
 };
 
 export let defineProjections = function (modelClass) {

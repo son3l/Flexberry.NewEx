@@ -50,6 +50,9 @@ export default {
     },
     size: {
       __caption__: 'Size'
+    },
+    noNOptFile: {
+      __caption__: 'noNOptFile'
     }
   }
 };

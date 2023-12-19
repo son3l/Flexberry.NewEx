@@ -3,8 +3,8 @@
   "modelName": "i-i-s-new-ex-download-file",
   "className": "DownloadFile",
   "nameSpace": "IIS.NewEx",
-  "parentModelName": "i-i-s-new-ex-opt-files",
-  "parentClassName": "OptFiles",
+  "parentModelName": null,
+  "parentClassName": null,
   "attrs": [
     {
       "name": "pathToLoad",
@@ -16,7 +16,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "optimize",
+      "relatedTo": "i-i-s-new-ex-optimize",
+      "inverse": null
+    }
+  ],
   "hasMany": [],
   "projections": [
     {

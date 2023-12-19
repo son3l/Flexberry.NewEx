@@ -3,8 +3,8 @@
   "modelName": "i-i-s-new-ex-optimize",
   "className": "Optimize",
   "nameSpace": "IIS.NewEx",
-  "parentModelName": "i-i-s-new-ex-download-file",
-  "parentClassName": "DownloadFile",
+  "parentModelName": null,
+  "parentClassName": null,
   "attrs": [
     {
       "name": "lvlCompress",
@@ -25,7 +25,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "uploadFile",
+      "relatedTo": "i-i-s-new-ex-upload-file",
+      "inverse": null
+    }
+  ],
   "hasMany": [],
   "projections": [
     {

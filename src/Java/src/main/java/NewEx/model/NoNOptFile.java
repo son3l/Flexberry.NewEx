@@ -7,6 +7,7 @@ import NewEx.utils.UUIDConverter;
 import javax.persistence.*;
 import java.util.UUID;
 
+import com.sap.olingo.jpa.metadata.core.edm.annotation.EdmIgnore;
 import java.util.Date;
 
 /**
@@ -37,17 +38,15 @@ public class NoNOptFile {
     @Column(name = "Exe")
     private String exe;
 
-    @Column(name = "PathToFile")
-    private String pathtofile;
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "NoNOptFile")
+    @Convert("NoNOptFile")
+    @Column(name = "NoNOptFile", length = 16, unique = true, nullable = false)
+    private UUID _nonoptfileid;
 
-    @Column(name = "lvlCompress")
-    private Integer lvlcompress;
-
-    @Column(name = "method")
-    private String method;
-
-    @Column(name = "PathToLoad")
-    private String pathtoload;
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "NoNOptFile", insertable = false, updatable = false)
+    private UploadFile nonoptfile;
 
 
     public NoNOptFile() {
@@ -100,38 +99,6 @@ public class NoNOptFile {
 
     public void setExe(String exe) {
       this.exe = exe;
-    }
-
-    public String getPathToFile() {
-      return pathtofile;
-    }
-
-    public void setPathToFile(String pathtofile) {
-      this.pathtofile = pathtofile;
-    }
-
-    public Integer getlvlCompress() {
-      return lvlcompress;
-    }
-
-    public void setlvlCompress(Integer lvlcompress) {
-      this.lvlcompress = lvlcompress;
-    }
-
-    public String getmethod() {
-      return method;
-    }
-
-    public void setmethod(String method) {
-      this.method = method;
-    }
-
-    public String getPathToLoad() {
-      return pathtoload;
-    }
-
-    public void setPathToLoad(String pathtoload) {
-      this.pathtoload = pathtoload;
     }
 
 

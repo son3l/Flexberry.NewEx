@@ -23,6 +23,9 @@ export default {
     },
     method: {
       __caption__: 'Method'
+    },
+    uploadFile: {
+      __caption__: 'uploadFile'
     }
   }
 };

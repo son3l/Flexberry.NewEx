@@ -14,6 +14,9 @@ export default {
   validations: {
     pathToLoad: {
       __caption__: 'Path to load'
+    },
+    optimize: {
+      __caption__: 'optimize'
     }
   }
 };

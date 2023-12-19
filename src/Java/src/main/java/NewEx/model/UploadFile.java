@@ -24,18 +24,6 @@ public class UploadFile {
     @Column(name = "PathToFile")
     private String pathtofile;
 
-    @Column(name = "lvlCompress")
-    private Integer lvlcompress;
-
-    @Column(name = "method")
-    private String method;
-
-    @Column(name = "PathToLoad")
-    private String pathtoload;
-
-    @Column(name = "Repository")
-    private String repository;
-
 
     public UploadFile() {
         super();
@@ -55,38 +43,6 @@ public class UploadFile {
 
     public void setPathToFile(String pathtofile) {
       this.pathtofile = pathtofile;
-    }
-
-    public Integer getlvlCompress() {
-      return lvlcompress;
-    }
-
-    public void setlvlCompress(Integer lvlcompress) {
-      this.lvlcompress = lvlcompress;
-    }
-
-    public String getmethod() {
-      return method;
-    }
-
-    public void setmethod(String method) {
-      this.method = method;
-    }
-
-    public String getPathToLoad() {
-      return pathtoload;
-    }
-
-    public void setPathToLoad(String pathtoload) {
-      this.pathtoload = pathtoload;
-    }
-
-    public String getRepository() {
-      return repository;
-    }
-
-    public void setRepository(String repository) {
-      this.repository = repository;
     }
 
 
