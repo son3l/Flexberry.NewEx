@@ -1,0 +1,9 @@
+﻿{
+  "nameSpace": "IIS.NewEx",
+  "className": "Method",
+  "enumObjects": {
+    "Draco": "Draco",
+    "ktx2": "ktx2",
+    "Meshport": "Meshport"
+  }
+}

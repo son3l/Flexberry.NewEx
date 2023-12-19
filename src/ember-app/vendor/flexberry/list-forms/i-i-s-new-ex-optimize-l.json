@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-ex-optimize-e",
+  "editForm": "i-i-s-new-ex-optimize-e",
+  "external": false,
+  "caption": "Optimize",
+  "name": "IISNewExOptimizeL",
+  "className": "OptimizeL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-ex-optimize",
+      "modelProjection": "OptimizeL"
+    }
+  ]
+}

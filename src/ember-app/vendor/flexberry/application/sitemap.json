@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "New ex",
+  "applicationTitle": "New ex",
+  "items": [
+    {
+      "link": null,
+      "menuName": "new-ex",
+      "caption": "NewEx",
+      "title": "NewEx",
+      "children": [
+        {
+          "link": "i-i-s-new-ex-no-n-opt-file-l",
+          "menuName": null,
+          "caption": "No n opt file",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-ex-download-file-l",
+          "menuName": null,
+          "caption": "Download file",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-ex-optimize-l",
+          "menuName": null,
+          "caption": "Optimize",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-ex-upload-file-l",
+          "menuName": null,
+          "caption": "Upload file",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-new-ex-opt-files-l",
+          "menuName": null,
+          "caption": "Opt files",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

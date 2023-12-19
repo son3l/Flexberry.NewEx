@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Opt files",
+  "name": "IISNewExOptFilesE",
+  "className": "OptFilesE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-ex-opt-files",
+      "modelProjection": "OptFilesE"
+    }
+  ]
+}

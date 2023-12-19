@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISNewExDownloadFile",
+  "modelName": "i-i-s-new-ex-download-file",
+  "className": "DownloadFile",
+  "nameSpace": "IIS.NewEx",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "pathToLoad",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "DownloadFileE",
+      "modelName": "i-i-s-new-ex-download-file",
+      "attrs": [
+        {
+          "name": "pathToLoad",
+          "caption": "Path to load",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "DownloadFileL",
+      "modelName": "i-i-s-new-ex-download-file",
+      "attrs": [
+        {
+          "name": "pathToLoad",
+          "caption": "Path to load",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

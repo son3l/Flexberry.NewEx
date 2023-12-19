@@ -1,0 +1,1 @@
+docker-compose -p newex-java up -d

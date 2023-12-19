@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISNewExUploadFile",
+  "modelName": "i-i-s-new-ex-upload-file",
+  "className": "UploadFile",
+  "nameSpace": "IIS.NewEx",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "pathToFile",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "UploadFileE",
+      "modelName": "i-i-s-new-ex-upload-file",
+      "attrs": [
+        {
+          "name": "pathToFile",
+          "caption": "Path to file",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "UploadFileL",
+      "modelName": "i-i-s-new-ex-upload-file",
+      "attrs": [
+        {
+          "name": "pathToFile",
+          "caption": "Path to file",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

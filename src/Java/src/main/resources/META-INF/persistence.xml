@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="Olingo4PG">
+        <class>NewEx.model.NoNOptFile</class>
+        <class>NewEx.model.DownloadFile</class>
+        <class>NewEx.model.Optimize</class>
+        <class>NewEx.model.UploadFile</class>
+        <class>NewEx.model.OptFiles</class>
+        <class>NewEx.model.FlexberryAdvLimit</class>
+        <class>NewEx.model.NewPlatformFlexberryFlexberryUserSetting</class>
+        <class>NewEx.model.NewPlatformFlexberryServicesLock</class>
+        <class>NewEx.model.IISCaseberryLoggingObjectsApplicationLog</class>
+
+    </persistence-unit>
+</persistence>

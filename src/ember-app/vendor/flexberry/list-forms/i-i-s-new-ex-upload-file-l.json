@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-ex-upload-file-e",
+  "editForm": "i-i-s-new-ex-upload-file-e",
+  "external": false,
+  "caption": "Upload file",
+  "name": "IISNewExUploadFileL",
+  "className": "UploadFileL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-ex-upload-file",
+      "modelProjection": "UploadFileL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Download file",
+  "name": "IISNewExDownloadFileE",
+  "className": "DownloadFileE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-ex-download-file",
+      "modelProjection": "DownloadFileE"
+    }
+  ]
+}

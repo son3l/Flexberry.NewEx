@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-ex-download-file-e",
+  "editForm": "i-i-s-new-ex-download-file-e",
+  "external": false,
+  "caption": "Download file",
+  "name": "IISNewExDownloadFileL",
+  "className": "DownloadFileL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-ex-download-file",
+      "modelProjection": "DownloadFileL"
+    }
+  ]
+}

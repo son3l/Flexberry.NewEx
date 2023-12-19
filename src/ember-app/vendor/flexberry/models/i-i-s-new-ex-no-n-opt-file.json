@@ -1,0 +1,138 @@
+﻿{
+  "name": "IISNewExNoNOptFile",
+  "modelName": "i-i-s-new-ex-no-n-opt-file",
+  "className": "NoNOptFile",
+  "nameSpace": "IIS.NewEx",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "date",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "exe",
+      "type": "i-i-s-new-ex-execution",
+      "flexberryType": "Execution",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "repository",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "size",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "NoNOptFileE",
+      "modelName": "i-i-s-new-ex-no-n-opt-file",
+      "attrs": [
+        {
+          "name": "date",
+          "caption": "Date",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "repository",
+          "caption": "Repository",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "size",
+          "caption": "Size",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "exe",
+          "caption": "Exe",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "NoNOptFileL",
+      "modelName": "i-i-s-new-ex-no-n-opt-file",
+      "attrs": [
+        {
+          "name": "date",
+          "caption": "Date",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "repository",
+          "caption": "Repository",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "name",
+          "caption": "Name",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "size",
+          "caption": "Size",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "exe",
+          "caption": "Exe",
+          "hidden": false,
+          "index": 4
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

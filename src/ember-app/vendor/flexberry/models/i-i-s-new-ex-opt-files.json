@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISNewExOptFiles",
+  "modelName": "i-i-s-new-ex-opt-files",
+  "className": "OptFiles",
+  "nameSpace": "IIS.NewEx",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "repository",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "OptFilesE",
+      "modelName": "i-i-s-new-ex-opt-files",
+      "attrs": [
+        {
+          "name": "repository",
+          "caption": "Repository",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "OptFilesL",
+      "modelName": "i-i-s-new-ex-opt-files",
+      "attrs": [
+        {
+          "name": "repository",
+          "caption": "Repository",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

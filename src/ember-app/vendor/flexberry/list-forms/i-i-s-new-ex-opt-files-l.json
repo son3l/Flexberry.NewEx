@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-new-ex-opt-files-e",
+  "editForm": "i-i-s-new-ex-opt-files-e",
+  "external": false,
+  "caption": "Opt files",
+  "name": "IISNewExOptFilesL",
+  "className": "OptFilesL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-ex-opt-files",
+      "modelProjection": "OptFilesL"
+    }
+  ]
+}

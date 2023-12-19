@@ -1,0 +1,75 @@
+﻿{
+  "name": "IISNewExOptimize",
+  "modelName": "i-i-s-new-ex-optimize",
+  "className": "Optimize",
+  "nameSpace": "IIS.NewEx",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "lvlCompress",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "method",
+      "type": "i-i-s-new-ex-method",
+      "flexberryType": "Method",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "OptimizeE",
+      "modelName": "i-i-s-new-ex-optimize",
+      "attrs": [
+        {
+          "name": "lvlCompress",
+          "caption": "Lvl compress",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "method",
+          "caption": "Method",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "OptimizeL",
+      "modelName": "i-i-s-new-ex-optimize",
+      "attrs": [
+        {
+          "name": "lvlCompress",
+          "caption": "Lvl compress",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "method",
+          "caption": "Method",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

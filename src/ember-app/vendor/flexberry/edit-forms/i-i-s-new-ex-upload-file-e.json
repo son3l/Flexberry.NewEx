@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Upload file",
+  "name": "IISNewExUploadFileE",
+  "className": "UploadFileE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-new-ex-upload-file",
+      "modelProjection": "UploadFileE"
+    }
+  ]
+}
